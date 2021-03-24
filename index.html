@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Slider</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://kit.fontawesome.com/8c3e990eb9.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+</head>
+<body>
+<section id="container-slider">
+	<a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+	<a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+	<ul class="listslider">
+		<li><a itlist="itlist_0" href="#" class="item-select-slid"></a></li>		
+		<li><a itlist="itlist_1" href="#"></a></li>	
+		<li><a itlist="itlist_2" href="#"></a></li>	
+	</ul>
+	<ul id="slider">
+		<li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity:1;">
+			<div class="content_slider">
+				<div>
+					<h2>Emprendimiento empresarial</h2>
+					<p>Descubra en qué consiste el emprendimiento empresarial por medio de 5 estrategias</p>
+					<a href="#" class="btnSlider">Ver más</a>		
+				</div>
+			</div>
+		</li>	
+		<li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg');">
+			<div class="content_slider">
+				<div>
+					<h2>Negocios</h2>
+					<p>Recursos, guías, herramientas y consejos para emprender, crear tu empresa o iniciar un negocio exitoso</p>
+					<a href="#" class="btnSlider">Ver más</a>		
+				</div>
+			</div>
+		</li>	
+		<li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg');">
+			<div class="content_slider">
+				<div>
+					<h2>Estrategias de negocio</h2>
+					<p>Las estrategias de negocio representan planes o métodos</p>
+					<a href="#" class="btnSlider">Ver más</a>		
+				</div>
+			</div>
+		</li>	
+	</ul>
+	<header><!-- cabecera de menú -->
+		<div class="icon"><!-- caja de menu hamburguesa -->
+			<i></i><!-- líneas de íconos de menú hamburguesa -->
+			<i></i>
+			<i></i>
+		</div>
+		<nav>
+			<ul class="primer"><!-- caja contenederora de menú -->
+				
+				<div class="menu"><!-- caja contenedora de niveles de menú -->
+					<li><a href="#">Primer</a></li> <!-- se inicia el primer nivel este es el primer botón-->
+					<li><a href="#" class="menu2">Primer</a><!-- segundo botón del primer nivel  -->
+						<ul class="segundo"><!-- se crea la clase segundo como contenedora del segundo nivel  -->
+							<li><a href="#">Segundo</a></li><!-- se listan botones de segundo nivel  -->
+							<li><a href="#" class="menu3">Segundo</a><!-- se crea botón de segundo nivel y una clase contenedora del tercer nivel -->
+								<ul class="tercero"><!-- se crea la clase del nivel tercero contenedora -->
+									<li><a href="#">Tercero</a></li><!-- se listan los botones del nivel tercero -->
+									<li><a href="#">Tercero</a></li>
+									<li><a href="#">Tercero</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Segundo</a></li><!-- se crea el botón del nivel segundo -->
+						</ul>
+					</li>
+					<li><a href="#">Primer</a></li><!-- se crean los tres módulos faltantes del primer nivel -->
+					<li><a href="#">Primer</a></li>
+					<li><a href="#">Primer</a></li>
+				</div>
+			</ul>
+		</nav><!-- se cierra etiqueta nav de menu -->
+	</header><!-- se cierra el header -->
+    <nav>
+	
+		<input type="checkbox" id="menuBtn">
+		<label for="menuBtn" class="menuBtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		
+	</nav>
+    <div class="container1" style="background-color: bisque; height: 300px; width: auto;">
+	</div>
+	<div class="container2" style="background-color: rgb(238, 199, 153); height: 300px; width: auto;">
+	</div>
+	<div class="container3" style="background-color: rgb(236, 192, 139); height: 300px; width: auto;">
+	</div>
+	<div class="container4" style="background-color: rgb(241, 172, 87); height: 300px; width: auto;">
+		<div class="img1">
+		<a href="https://api.whatsapp.com/send?phone=573217366944"> <img src="img/whatsapp.png" width="80px" height="80px" alt="whatsapp"></a>
+		<button onclick="backtotop()" id="bttButton" title="Back to Top"><i class="fas fa-angle-up"></i></button>
+	</div>
+	</div>
+
+   
+</body><!-- cierra body -->
